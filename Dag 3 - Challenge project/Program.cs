@@ -185,6 +185,7 @@ do
                 {
                     Console.WriteLine("Enter the pet's age or enter ? if unknown");
                     readResult = Console.ReadLine();
+                    readResult = Console.re;
                     if (readResult != null)
                     {
                         animalAge = readResult;
