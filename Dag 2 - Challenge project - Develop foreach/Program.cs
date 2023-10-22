@@ -23,9 +23,8 @@ using System;
 decimal examAssignments = 5m;
 
 
-int examScore = 0;
 int examCredit = 0;
-int examPoints = 0;
+
 
 string[] studentNames = new string[] { "Sophia", "Andrew", "Emma", "Logan" };
 
@@ -94,7 +93,7 @@ foreach (string name in studentNames)
         }
     }
 
-    examPoints = examCredit / 10;
+    decimal examPoints = ((decimal)examCredit * 0.1m) / examAssignments;
 
     currentStudentGrade = (decimal)sumAssignmentScores / examAssignments;
 
